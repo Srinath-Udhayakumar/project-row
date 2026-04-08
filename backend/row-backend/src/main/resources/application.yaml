@@ -1,13 +1,21 @@
+server:
+  port: 8081
+
 spring:
   application:
     name: app
   datasource:
     url: jdbc:postgresql://localhost:5432/hackathon_db
     username: postgres
-    password: 231429
+    password: root
 
 
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+app:
+  jwt:
+    secret: thisIsASecretKeyForJwtAuthThatIsAtLeastThirtyTwoChars
+    expiration-ms: 86400000
