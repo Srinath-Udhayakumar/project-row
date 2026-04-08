@@ -1,4 +1,4 @@
- const TOKEN_KEY = "token";
+const TOKEN_KEY = "token";
 const ROLE_KEY = "role";
 const USERNAME_KEY = "username";
 
@@ -21,4 +21,3 @@ export const getRole = () => localStorage.getItem(ROLE_KEY) || "USER";
 export const getUsername = () => localStorage.getItem(USERNAME_KEY) || "";
 
 export const isAuthenticated = () => Boolean(getToken());
-

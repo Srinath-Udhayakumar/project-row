@@ -2,6 +2,8 @@
 
 import { getToken } from "../util/auth";
 
+import { getToken } from "../util/auth";
+
 const API = axios.create({
   baseURL: "http://localhost:8081",
 });
