@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #1a1a1a;
+}
+
+a {
+  color: #0056b3;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.topbar {
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.topbar h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.content {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 0 12px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.auth-card {
+  max-width: 420px;
+  margin: 24px auto;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  display: grid;
+  gap: 4px;
+  font-size: 14px;
+}
+
+input,
+button {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #c9c9c9;
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+  background: #0d6efd;
+  color: #fff;
+  border: none;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.danger {
+  background: #c62828;
+}
+
+.link-btn {
+  background: transparent;
+  color: #0d6efd;
+  border: none;
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 12px;
+}
+
+.product-card p {
+  margin: 8px 0;
+}
+
+.admin-form {
+  display: grid;
+  gap: 8px;
+}
+
+.cart-item {
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.error {
+  color: #c62828;
+  font-weight: 600;
+}
